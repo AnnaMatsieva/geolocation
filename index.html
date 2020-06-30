@@ -24,11 +24,18 @@
 	<div>
 		<a href="prefs:root=Safari">iPhone test 4 "prefs:root=Safari"</a>
 	</div>
+	<div>
+		<a id="safari-button" href="prefs:root=Settings">iPhone test 5  "prefs:root=Settings"</a>
+	</div>
 
 	<script>
 		document.getElementById("button").onclick = function() {
 			window.location.href = "chrome://version/";
 		};
+
+		document.getElementById("safari-button").onclick = function() {
+			window.location.href = "prefs:root=Settings";
+		}
 	</script>
 </body>
 </html>
