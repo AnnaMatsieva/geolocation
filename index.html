@@ -7,7 +7,10 @@
 </head>
 <body>
 	<div>
-		<a href="chrome://version/">Chrome</a>
+		<a href="chrome://settings/">Chrome</a>
+	</div>
+	<div>
+		<a id="button" href="chrome://settings/">Chrome test 2 with redirect</a>
 	</div>
 	<div>
 		<a href="prefs:root=Settings">iPhone test 1  "prefs:root=Settings"</a>
@@ -21,5 +24,11 @@
 	<div>
 		<a href="prefs:root=Safari">iPhone test 4 "prefs:root=Safari"</a>
 	</div>
+
+	<script>
+		document.getElementById("button").onclick = function() {
+			window.location.href = "chrome://version/";
+		};
+	</script>
 </body>
 </html>
